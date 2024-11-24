@@ -34,11 +34,11 @@ enum MessageType: string
     public static function toArray(): array
     {
         return [
-            self::TEXT->value => self::TEXT->name,
-            self::IMAGE->value => self::IMAGE->name,
-            self::VIDEO->value => self::VIDEO->name,
-            self::AUDIO->value => self::AUDIO->name,
-            self::FILE->value => self::FILE->name,
+            self::TEXT->name => self::TEXT->value,
+            self::IMAGE->name => self::IMAGE->value,
+            self::VIDEO->name => self::VIDEO->value,
+            self::AUDIO->name => self::AUDIO->value,
+            self::FILE->name => self::FILE->value,
         ];
     }
 }

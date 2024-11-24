@@ -13,7 +13,7 @@ return new class extends Migration {
             $table->foreignId('received_id');
             $table->string('type');
             $table->string('value');
-            $table->foreignId('group_id');
+            $table->foreignId('group_id')->nullable();
             $table->timestamps();
         });
     }
